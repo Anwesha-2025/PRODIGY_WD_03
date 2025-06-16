@@ -1,0 +1,85 @@
+/* Reset and base styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #ffe53b, #ff6f91, #ff9671);
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Header */
+h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #ff00c8;
+  text-shadow: 2px 2px 4px #fff176;
+}
+
+/* Game Board */
+#game-board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  background: #ffffff;
+  border: 3px solid #ff6f61;
+  border-radius: 12px;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ff00c8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(255, 111, 97, 0.4);
+  transition: background 0.3s, transform 0.2s;
+}
+
+.cell:hover {
+  background: #ffde59;
+  transform: scale(1.1);
+}
+
+/* Status Message */
+#status {
+  font-size: 1.4rem;
+  margin: 10px 0 20px;
+  color: #ff6f61;
+  text-shadow: 1px 1px 2px #fff;
+}
+
+/* Button Styling */
+button {
+  padding: 12px 24px;
+  font-size: 1rem;
+  margin: 10px 8px;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(45deg, #ff6f91, #ff9671);
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(255, 105, 180, 0.6);
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 105, 180, 0.9);
+}
